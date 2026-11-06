@@ -222,3 +222,19 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
+
+  // Types both SSH public keys from github.com/skyar-ch.keys.
+  // ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO68kQDJGryUSfjOzvoQBMnZKkUyseoXUU+MmwEtDxek
+  // ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFwvfHCaGgWF7dbsAUSmj2VrcMy69Zsw0aYDGN141PJ8
+  pubkeys: pubkeys {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <15>;
+    tap-ms = <15>;
+    bindings
+      = <&kp S &kp S &kp H &kp MINUS &kp E &kp D &kp N2 &kp N5 &kp N5 &kp N1 &kp N9 &kp SPACE &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(C) &kp N3 &kp LS(N) &kp Z &kp A &kp LS(C) &kp N1 &kp L &kp LS(Z) &kp LS(D) &kp LS(I) &kp N1 &kp LS(N) &kp LS(T) &kp LS(E) &kp N5 &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(O) &kp N6 &kp N8 &kp K &kp LS(Q) &kp LS(D) &kp LS(J) &kp LS(G) &kp R &kp Y &kp LS(U) &kp LS(S) &kp F &kp J &kp LS(O) &kp Z &kp V &kp O &kp LS(Q) &kp LS(B) &kp LS(M) &kp N &kp LS(Z) &kp LS(K) &kp K &kp LS(U) &kp Y &kp S &kp E &kp O &kp LS(X) &kp LS(U) &kp LS(U) &kp PLUS &kp LS(M) &kp M &kp W &kp LS(E) &kp T &kp LS(D) &kp X &kp E &kp K>
+      , <&kp RET>
+      , <&kp S &kp S &kp H &kp MINUS &kp E &kp D &kp N2 &kp N5 &kp N5 &kp N1 &kp N9 &kp SPACE &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(C) &kp N3 &kp LS(N) &kp Z &kp A &kp LS(C) &kp N1 &kp L &kp LS(Z) &kp LS(D) &kp LS(I) &kp N1 &kp LS(N) &kp LS(T) &kp LS(E) &kp N5 &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(F) &kp W &kp V &kp F &kp LS(H) &kp LS(C) &kp A &kp LS(G) &kp G &kp LS(W) &kp LS(F) &kp N7 &kp D &kp B &kp S &kp LS(A) &kp LS(U) &kp LS(S) &kp M &kp J &kp N2 &kp LS(V) &kp R &kp C &kp LS(M) &kp Y &kp N6 &kp N9 &kp LS(Z) &kp S &kp W &kp N0 &kp A &kp LS(Y) &kp LS(D) &kp LS(G) &kp LS(N) &kp N1 &kp N4 &kp N1 &kp LS(P) &kp LS(J) &kp N8>
+      ;
+    display-name = "Public Keys";
+  };
