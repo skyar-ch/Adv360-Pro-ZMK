@@ -17,8 +17,8 @@
           #binding-cells = <2>;
           tapping-term-ms = <200>;
           quick-tap-ms = <175>;
-          require-prior-idle-ms = <150>;
-          flavor = "tap-preferred";
+          require-prior-idle-ms = <125>;
+          flavor = "balanced";
           bindings = <&kp>, <&kp>;
           // Hold only with the opposite hand or a thumb key, checked on release
           // so mods on the same hand can still be stacked.
@@ -32,8 +32,8 @@
           #binding-cells = <2>;
           tapping-term-ms = <200>;
           quick-tap-ms = <175>;
-          require-prior-idle-ms = <150>;
-          flavor = "tap-preferred";
+          require-prior-idle-ms = <125>;
+          flavor = "balanced";
           bindings = <&kp>, <&kp>;
           // Hold only with the opposite hand or a thumb key, checked on release
           // so mods on the same hand can still be stacked.
