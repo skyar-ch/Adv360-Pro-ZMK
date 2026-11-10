@@ -15,9 +15,9 @@
           compatible = "zmk,behavior-hold-tap";
           display-name = "Home Row Mod Left";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
+          tapping-term-ms = <150>;
           quick-tap-ms = <175>;
-          require-prior-idle-ms = <125>;
+          require-prior-idle-ms = <100>;
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
           // Hold only with the opposite hand or a thumb key, checked on release
@@ -30,9 +30,9 @@
           compatible = "zmk,behavior-hold-tap";
           display-name = "Home Row Mod Right";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
+          tapping-term-ms = <150>;
           quick-tap-ms = <175>;
-          require-prior-idle-ms = <125>;
+          require-prior-idle-ms = <100>;
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
           // Hold only with the opposite hand or a thumb key, checked on release
